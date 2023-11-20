@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title> Регистрация </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a97047fead.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+    <h2> Регистрация </h2>
+    <form method="post">
+      {% csrf_token %}
+      <p></p><label> Имя: </label>
+      <input type="text" name="usrname" required></p>
+      <p></p><label> Электронная почта: </label>
+      <input type="text" name="email" required></p>
+      <p></p><label> Телефон: </label>
+      <input type="text" name="telephone" required></p>
+      <p></p><label> Пароль: </label>
+      <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Пароль должен содержать как минимум одну цифру, одну заглавную или строчную латинские буквы и не меньше 8 символов" required></p>
+      <p></p><label> Подтверждение пароля: </label>
+      <input type="password" name="password" required></p>
+      <input class="btn-secondary" type="submit" value="Зарегистрироваться">
+  </form>
+  <h6> Нажимая кнопку «Зарегистрироваться», я принимаю условия<a href="/policy">политики конфиденциальности.</a></h6>
+</body>
+</html>

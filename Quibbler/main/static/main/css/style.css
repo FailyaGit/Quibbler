@@ -1,0 +1,58 @@
+body {
+    background-color: #D8BFD8;
+}
+
+h1, h2, h6, label, input, img {
+    color: #4B0082;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin: 20px;
+    ;
+}
+
+p {
+    color: #4B0082;
+    font-family: 'Georgia', serif;
+    margin: 20px;
+    ;
+}
+
+h3 {
+    color: #6f339b;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    margin: 20px;
+    ;
+}
+
+ol, h7 {
+    color: #6f339b;
+    font-family: 'Georgia', serif;
+    margin: 20px;
+    ;
+}
+
+.News {
+    margin: 50px;
+    ;
+}
+
+ul, a {
+    color: #814da8;
+    font-family: 'Georgia', serif;
+    margin: 10px;
+    ;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+table {
+    margin: 50px;
+    color: #4B0082;
+    font-family: 'Georgia', serif;
+    ;
+}
+
